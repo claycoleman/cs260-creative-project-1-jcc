@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maame | About</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  </head>
+  <body id="about">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <h3 class="nav-brand">MAAME</h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="body">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="main-pic" src="../images/baby.jpg" alt="Photo of Ghanaian Baby" />
+        </div>
+        <div class="col-md-8">
+          <h3>About</h3>
+          <p>
+            Maame is a tech organization dedicated to improved health outcomes for mothers in rural
+            areas of developing nations, such as Ghana and Uganda.
+          </p>
+
+          <p>
+            We develop a maternal health app for both the iOS and Android platforms which allows
+            community health workers in rural regions to keep track of patients and ensure they get
+            the proper prenatal and postnatal visits during their pregnancies.
+          </p>
+
+          <p>
+            Maame is an ideal fit for remote or rural areas, as its software has been built to
+            support offline usage from the ground up. This allows community health workers to use
+            the platform in any situation.
+          </p>
+        </div>
+        <div id="contact-form" class="col-md-12">
+          <h3>Interested?</h3>
+          <p>
+            Maame's platform is designed to support teams all over the world. If you are interested
+            in deploying Maame in your region, please reach out below and our team will reach out
+            shortly.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name.." />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name.." />
+            </div>
+            <div class="col-md-6">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email.." />
+            </div>
+            <div class="col-md-6">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="Your country.." />
+            </div>
+          </div>
+
+          <button class="btn btn-light">Submit</button>
+        </div>
+      </div>
+
+      <footer>
+          © Maame Health, 2019 |
+          <a target="_blank" href="https://github.com/claycoleman/cs260-creative-project-1-jcc"
+            >GitHub Repo</a
+          >
+        </footer>
+    </div>
+  </body>
+</html>

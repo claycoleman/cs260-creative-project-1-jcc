@@ -2,9 +2,8 @@
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  font-family: 'Thasadith', sans-serif;
-  letter-spacing: 0.07em;
-  padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 64px;
   padding-top: 16px;
 }
 
@@ -16,7 +15,7 @@ form {
 }
 
 input {
-  font-family: 'Thasadith', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex: 1;
   padding: 8px;
@@ -26,7 +25,7 @@ input {
 
 a {
   display: inline-block;
-  color: #1e96ca;
+  color: #cc0000;
   opacity: 1;
   visibility: visible;
   -moz-transform: translateY(0) translateZ(0);
@@ -43,7 +42,7 @@ a:after {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #1e96ca;
+  background: #cc0000;
   height: 1px;
   width: 100%;
   transform-origin: left center;
@@ -54,7 +53,7 @@ a:after {
 }
 
 a:hover {
-  color: #1e96ca;
+  color: #cc0000;
   filter: brightness(60%);
 }
 a:hover::after {
@@ -109,15 +108,16 @@ nav ul {
   padding: 0;
 }
 nav li {
-  height: 36px;
+  height: 32px;
   flex: 1;
   text-decoration: none;
   list-style: none;
   padding-bottom: 4px;
   transition: background-color 0.4s cubic-bezier(0.15, 0.9, 0.34, 0.95);
+  margin-right: 8px;
 }
 nav li.active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(204, 0, 0, 0.2);
 }
 nav a {
   color: darkslategray;
@@ -128,10 +128,10 @@ nav a {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 0px 12px !important;
+  padding: 0px 16px !important;
 }
 nav li:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(204, 0, 0, 0.4);
 }
 nav a:after {
   content: none;
@@ -143,8 +143,13 @@ nav a:after {
 
   text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 1px;
   font-weight: bold;
+  padding: 4px 16px;
+  background-color: #cc0000;
+  border-radius: 2px;
+  color: white;
 }
 
 .nav-item {
@@ -163,20 +168,74 @@ nav a:after {
 h1 {
   text-align: center;
   font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.banner-img {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  height: calc(100vh - 48px);
+  width: 100vw;
+  background-image: url(../images/women.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  display: block;
+}
+
+.center-info {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.center-info * {
+  color: white;
 }
 
 #main .body h1 {
-  text-align: left;
+  text-align: center;
   font-size: 42px;
 }
 
 .body h3 {
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
-  font-weight: bold;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   padding-bottom: 8px;
+}
+
+#contact-form {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 2px solid black;
+}
+
+#contact-form .col-md-6, #login-form .col-md-6 {
+  margin-top: 8px;
+}
+
+#contact-form .link, #login-form .link {
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+button.btn {
+  margin-top: 16px;
+  border: 1px solid lightgray;
+  width: 100%;
 }
 
 section {
@@ -192,28 +251,24 @@ article {
   padding: 0 8px;
 }
 
-.review {
-  margin: 0;
+.patient-row {
+  background: lightgray;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 4px 0px;
+  padding: 8px 4px;
 }
 
-.reviewer {
-  font-weight: bold;
-  margin-left: 20px;
-  margin-top: 2px;
+.patient-row .row {
+  margin: 4px 8px;
 }
 
-#thumbs-up-gif {
-  max-width: 100%;
-}
-.masonry {
-  column-gap: 1em;
+p.due-date {
+  margin-bottom: 0px;
 }
 
-.masonry-item {
-  background-color: #eee;
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
+p.location {
+  text-align: right;
 }
 
 @media (min-width: 1024px) {
@@ -235,6 +290,11 @@ article {
 }
 
 @media (max-width: 768px) {
+  .banner-img {
+
+  top: 56px;
+  height: calc(100vh - 56px);
+  }
   body {
     width: calc(100% - 32px);
     margin: 0 16px;
@@ -263,25 +323,20 @@ article {
   }
 
   #main .body h1 {
-    text-align: left;
+    text-align: center;
     font-size: 42px;
-    color: black;
     margin-top: 8px;
   }
 
   .body h3 {
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: black;
-    border-bottom: 2px solid black;
     padding-bottom: 8px;
   }
-}
 
-@media (max-width: 540px) {
-  .masonry {
-    column-count: 1;
+  .center-info {
+    max-width: calc(100vw - 48px);
   }
 }

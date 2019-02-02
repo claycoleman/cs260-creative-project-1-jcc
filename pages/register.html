@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maame | Register</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  </head>
+  <body id="about">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <h3 class="nav-brand">MAAME</h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="body">
+      <div class="row">
+        <div id="login-form" class="col-md-12">
+          <h3>Register</h3>
+          <p>
+            Create an account with your Maame Health credentials to access your patient information
+            and analytics data online.
+          </p>
+          <p>
+            <i
+              >(This is not a separate page in the menu bar because I would use a front-end
+              framework to dynamically render this on the auth screen.)</i
+            >
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name.." />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name.." />
+            </div>
+            <div class="col-md-6">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email.." />
+            </div>
+            <div class="col-md-6">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="Your country.." />
+            </div>
+            <div class="col-md-6">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Your password.." />
+            </div>
+            <div class="col-md-6">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm your password..."
+              />
+            </div>
+          </div>
+
+          <button class="btn btn-light">Register</button>
+          <div class="link">
+            <a href="login.html">Already have an account?</a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        © Maame Health, 2019 |
+        <a target="_blank" href="https://github.com/claycoleman/cs260-creative-project-1-jcc"
+          >GitHub Repo</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

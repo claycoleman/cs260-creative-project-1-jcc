@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maame | Dashboard</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  </head>
+  <body id="dashboard">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <h3 class="nav-brand">Maame</h3>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html"
+              >Dashboard <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="body">
+      <h3>Dashboard</h3>
+      <p>Welcome home, {{ user.first_name }} {{ user.last_name }}!</p>
+      <p>
+        <i
+          >(Obviously this would be full of dynamically loaded data, and this page would only be
+          accessible to those who logged in. Then those other tabs at the top would disappear, and
+          you would just have dashboard or something like that.)</i
+        >
+      </p>
+      <hr />
+      <div class="row">
+        <div class="col-md-4" style="text-align: center;">
+          <h4>Active Pregnancies</h4>
+          <h5>6</h5>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+          <h4>Total Patients</h4>
+          <h5>14</h5>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+          <h4>Total Visits</h4>
+          <h5>32</h5>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="patient-row col-md-12">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Jane Sorena</h5>
+                  <p class="due-date"><b>Due Date:</b> Feb 29, 2019</p>
+                </div>
+                <div class="col-4">
+                  <p class="location">Asikuma, Ghana</p>
+                </div>
+              </div>
+            </div>
+            <div class="patient-row col-md-12">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Michele Osuma</h5>
+                  <p class="due-date"><b>Due Date:</b> Mar 29, 2019</p>
+                </div>
+                <div class="col-4">
+                  <p class="location">Accra, Ghana</p>
+                </div>
+              </div>
+            </div>
+            <div class="patient-row col-md-12">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Jess Ukima</h5>
+                  <p class="due-date"><b>Due Date:</b>Dec 29, 2019</p>
+                </div>
+                <div class="col-4">
+                  <p class="location">Accra, Ghana</p>
+                </div>
+              </div>
+            </div>
+            <div class="patient-row col-md-12">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Polly Hope</h5>
+                  <p class="due-date"><b>Due Date:</b> June 29, 2019</p>
+                </div>
+                <div class="col-4">
+                  <p class="location">Asikuma, Ghana</p>
+                </div>
+              </div>
+            </div>
+            <div class="patient-row col-md-12">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Lucy Brakwa</h5>
+                  <p class="due-date"><b>Due Date:</b> Apr 29, 2019</p>
+                </div>
+                <div class="col-4">
+                  <p class="location">Bahevan, Ghana</p>
+                </div>
+              </div>
+            </div>
+            <div class="patient-row col-md-12">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Yvonne Magelis</h5>
+                  <p class="due-date"><b>Due Date:</b> Jul 29, 2019</p>
+                </div>
+                <div class="col-4">
+                  <p class="location">Asikuma, Ghana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        © Maame Health, 2019 |
+        <a target="_blank" href="https://github.com/claycoleman/cs260-creative-project-1-jcc"
+          >GitHub Repo</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
